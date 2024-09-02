@@ -15,45 +15,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body id="top-of-page">
     <div class="underlay"></div>
     <header>
         <a href=""/>
             <h1>Geovane Alonso</h1>
         </a>
         <h4>Desenvolvedor Full Stack</h4>
-        <p>Place holder introdutction paragraph.</p>
+        <p>Desenvolvendo soluções inteligentes com código eficiente e design centrado no usuário.</p>
         <nav>
-            <a href="">
+            <a class="anchor-text" href="#about">
                 <p>Sobre</p>
             </a>
-            <a href="">
+            <a class="anchor-text" href="#experience">
                 <p>Experiência</p>
             </a>
-            <a href="">
+            <a class="anchor-text" href="#projects">
                 <p>Projetos</p>
             </a>
         </nav>
-        <div>
-            <a href="">ICON</a>
-            <a href="">ICON</a>
-            <a href="">ICON</a>
+        <div class="social-links-container">
+            <a href="https://www.linkedin.com/in/geovane-alonso/" target="_blank" class="social-link">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/geovanealonso" target="_blank" class="social-link">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/geovane.alonso_/" target="_blank" class="social-link">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
         </div>
     </header>
     <main>
-        <section>
-            <div>
+        <section id="about">
+            <div class="sticky-header">
                 <h2 class="lightText">Sobre</h2>
             </div>
             <div class="about-contents">
-                <p>hello my name is james and I really like programming and watching animated series and going to the <a href="facebook.com" target="_blank" class="anchor-text">gym</a> and currently ti's raining which i also enhoy because it means I have an excuse to say inside</p>
-                <p>hello my name is james and I really like programming and watching animated series and going to the gym and currently ti's raining which i also enhoy because it means I have an excuse to say inside</p>
-                <p>hello my name is james and I really like programming and watching animated series and going to the gym and currently ti's raining which i also enhoy because it means I have an excuse to say inside</p>
+                <p>Sou um desenvolvedor full-stack com formação em Análise e Desenvolvimento de Sistemas pela Faculdade de Tecnologia do Estado de São Paulo e atualmente cursando Design Gráfico na Universidade Santa Cecília. Com habilidades em C/C++, Python, JavaScript, Java, HTML, CSS e React, tenho uma paixão por criar interfaces bonitas, acessíveis e funcionais. Meu foco é sempre proporcionar a melhor experiência ao usuário, aliando design intuitivo com código eficiente para desenvolver soluções que realmente fazem a diferença.</p>
             </div>
         </section>
 
-        <section>
-            <div>
+        <section id="experience">
+            <div class="sticky-header">
                 <h2 class="lightText">Experiência</h2>
             </div>
             <div class="experience-contents">
@@ -61,9 +65,9 @@
                     <p class="tenure">2024 - atualmente</p>
                     <div class="card-column">
                         <a href="/" target="_blank" class="anchor-text card-header">
-                            <h3 >Desenvolvedor Fullstack · Projeto Nova Era ICON</h3>
+                            <h3 >Desenvolvedor Fullstack · Projeto Nova Era <i class="fa-solid fa-arrow-right anchor-icon"></i></h3>
                         </a>
-                        <p>hello my name is james and I really like programming and watching animated series and going to the gym and currently ti's raining which i also enhoy because it means I have an excuse to say inside</p>
+                        <p>Desenvolvi o site para o Projeto Nova Era, uma iniciativa que ensina a terceira idade a usar tecnologias. Abordei o design com simplicidade, criando uma interface chamativa que transmite todas as informações necessárias de forma clara e acessível ao público-alvo. Utilizando ferramentas como Figma para o design UI/UX e HTML, CSS e JavaScript para a programação, testei o site diretamente com os alunos do projeto, garantindo que ele fosse intuitivo e fácil de usar para todos.</p>
                         <div class="tag-container">
                             <div class="tag">
                                 <p>HTML</p>
@@ -87,11 +91,13 @@
                     </div>
                 </div>
             </div>
-            <a href="" class="anchor-text">Acessar currículo completo ICON</a>
+            <!--
+            <a href="" class="anchor-text">Acessar currículo completo <i class="fa-solid fa-arrow-right anchor-icon"></i></a>
+            -->
         </section>
 
-        <section>
-            <div>
+        <section id="projects">
+            <div class="sticky-header">
                 <h2 class="lightText">Projetos</h2>
             </div>
             <div class="project-contents">
@@ -100,11 +106,14 @@
                         <img src="/public/argentina3.png" alt="imagem-projeto-1">
                     </div>
                     <div class="card-column">
-                        <a href="/" target="_blank" class="anchor-text">
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7234974892834619395/" target="_blank" class="anchor-text">
                             <h3 class="card-header">Design Bandeira Argentina para Caderno</h3>
                         </a>
-                        <p>hello my name is james and I really like programming and watching animated series and going to the gym and currently ti's raining which i also enhoy because it means I have an excuse to say inside</p>
-                        <a href="">ICON + TEXT</a>
+                        <p>Criei uma capa de caderno personalizada para um cliente que solicitou a bandeira da Argentina como tema. Realizei um redesign da bandeira, ajustando-a para se adequar perfeitamente ao tamanho do caderno no Photoshop, garantindo que o resultado final fosse visualmente atraente e de alta qualidade, atendendo às expectativas do cliente.</p>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7234974892834619395/" target="_blank" class="anchor-text project-stat-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <p>Post no Linkedin</p>
+                        </a>
                         <div class="tag-container">
                             <div class="tag">
                                 <p>Photoshop</p>
@@ -116,11 +125,16 @@
                     </div>
                 </div>
             </div>
-            <a href="" class="anchor-text">Acessar currículo completo ICON</a>
+            <!--
+            <a href="" class="project-archive-link">Ver todos os projetos <span class="righ-arrow">&rarr;</span></a>
+           -->
         </section>
     </main>
     <footer>
-        <p>PLACEHOLDER FOOTER TEXT</p>
+        <p>Desenvolvido por Geovane Alonso. Programado no <a target="_blank" href="https://code.visualstudio.com/" class="anchor-text">Visual Studio Code</a>.<br/> Hospedado no <a target="_blank" href="https://pages.github.com/" class="anchor-text">GitHub Pages</a>.<br/>Domínio adquirido pela <a target="_blank" href="https://www.hostinger.com.br/" class="anchor-text">Hostinger</a>.<br/>Todo texto está na fonte Inter.</p><br/>
+        <a href="#top-of-page" class="scroll-to-top">
+            <i class="fa-solid fa-up-long"></i>
+        </a>
     </footer>
 </body>
 </html>
